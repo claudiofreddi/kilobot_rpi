@@ -20,7 +20,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'my_node = kilobot_rpi.my_node:main'
+            'my_node = kilobot_rpi.my_node:main',
+            'cmd_to_pwm_driver = kilobot_rpi.cmd_to_pwm_driver:main'
         ],
     },
 )

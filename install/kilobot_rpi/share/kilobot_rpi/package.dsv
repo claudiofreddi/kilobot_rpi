@@ -1,0 +1,6 @@
+source;share/kilobot_rpi/hook/pythonpath.ps1
+source;share/kilobot_rpi/hook/pythonpath.dsv
+source;share/kilobot_rpi/hook/pythonpath.sh
+source;share/kilobot_rpi/hook/ament_prefix_path.ps1
+source;share/kilobot_rpi/hook/ament_prefix_path.dsv
+source;share/kilobot_rpi/hook/ament_prefix_path.sh

@@ -1,0 +1,44 @@
+running egg_info
+creating build/kilobot_rpi/kilobot_rpi.egg-info
+writing build/kilobot_rpi/kilobot_rpi.egg-info/PKG-INFO
+writing dependency_links to build/kilobot_rpi/kilobot_rpi.egg-info/dependency_links.txt
+writing entry points to build/kilobot_rpi/kilobot_rpi.egg-info/entry_points.txt
+writing requirements to build/kilobot_rpi/kilobot_rpi.egg-info/requires.txt
+writing top-level names to build/kilobot_rpi/kilobot_rpi.egg-info/top_level.txt
+writing manifest file 'build/kilobot_rpi/kilobot_rpi.egg-info/SOURCES.txt'
+reading manifest file 'build/kilobot_rpi/kilobot_rpi.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file 'build/kilobot_rpi/kilobot_rpi.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/claudio/robot_ws/src/kilobot_rpi/build/kilobot_rpi/build
+creating /home/claudio/robot_ws/src/kilobot_rpi/build/kilobot_rpi/build/lib
+creating /home/claudio/robot_ws/src/kilobot_rpi/build/kilobot_rpi/build/lib/kilobot_rpi
+copying kilobot_rpi/my_node.py -> /home/claudio/robot_ws/src/kilobot_rpi/build/kilobot_rpi/build/lib/kilobot_rpi
+copying kilobot_rpi/cmd_to_pwm_driver.py -> /home/claudio/robot_ws/src/kilobot_rpi/build/kilobot_rpi/build/lib/kilobot_rpi
+copying kilobot_rpi/motor_pwm_test.py -> /home/claudio/robot_ws/src/kilobot_rpi/build/kilobot_rpi/build/lib/kilobot_rpi
+copying kilobot_rpi/__init__.py -> /home/claudio/robot_ws/src/kilobot_rpi/build/kilobot_rpi/build/lib/kilobot_rpi
+running install
+/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+running install_lib
+creating /home/claudio/robot_ws/src/kilobot_rpi/install/kilobot_rpi/lib/python3.10/site-packages/kilobot_rpi
+copying /home/claudio/robot_ws/src/kilobot_rpi/build/kilobot_rpi/build/lib/kilobot_rpi/my_node.py -> /home/claudio/robot_ws/src/kilobot_rpi/install/kilobot_rpi/lib/python3.10/site-packages/kilobot_rpi
+copying /home/claudio/robot_ws/src/kilobot_rpi/build/kilobot_rpi/build/lib/kilobot_rpi/cmd_to_pwm_driver.py -> /home/claudio/robot_ws/src/kilobot_rpi/install/kilobot_rpi/lib/python3.10/site-packages/kilobot_rpi
+copying /home/claudio/robot_ws/src/kilobot_rpi/build/kilobot_rpi/build/lib/kilobot_rpi/motor_pwm_test.py -> /home/claudio/robot_ws/src/kilobot_rpi/install/kilobot_rpi/lib/python3.10/site-packages/kilobot_rpi
+copying /home/claudio/robot_ws/src/kilobot_rpi/build/kilobot_rpi/build/lib/kilobot_rpi/__init__.py -> /home/claudio/robot_ws/src/kilobot_rpi/install/kilobot_rpi/lib/python3.10/site-packages/kilobot_rpi
+byte-compiling /home/claudio/robot_ws/src/kilobot_rpi/install/kilobot_rpi/lib/python3.10/site-packages/kilobot_rpi/my_node.py to my_node.cpython-310.pyc
+byte-compiling /home/claudio/robot_ws/src/kilobot_rpi/install/kilobot_rpi/lib/python3.10/site-packages/kilobot_rpi/cmd_to_pwm_driver.py to cmd_to_pwm_driver.cpython-310.pyc
+byte-compiling /home/claudio/robot_ws/src/kilobot_rpi/install/kilobot_rpi/lib/python3.10/site-packages/kilobot_rpi/motor_pwm_test.py to motor_pwm_test.cpython-310.pyc
+byte-compiling /home/claudio/robot_ws/src/kilobot_rpi/install/kilobot_rpi/lib/python3.10/site-packages/kilobot_rpi/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/claudio/robot_ws/src/kilobot_rpi/install/kilobot_rpi/share/ament_index
+creating /home/claudio/robot_ws/src/kilobot_rpi/install/kilobot_rpi/share/ament_index/resource_index
+creating /home/claudio/robot_ws/src/kilobot_rpi/install/kilobot_rpi/share/ament_index/resource_index/packages
+copying resource/kilobot_rpi -> /home/claudio/robot_ws/src/kilobot_rpi/install/kilobot_rpi/share/ament_index/resource_index/packages
+copying package.xml -> /home/claudio/robot_ws/src/kilobot_rpi/install/kilobot_rpi/share/kilobot_rpi
+running install_egg_info
+Copying build/kilobot_rpi/kilobot_rpi.egg-info to /home/claudio/robot_ws/src/kilobot_rpi/install/kilobot_rpi/lib/python3.10/site-packages/kilobot_rpi-0.0.0-py3.10.egg-info
+running install_scripts
+Installing my_node script to /home/claudio/robot_ws/src/kilobot_rpi/install/kilobot_rpi/lib/kilobot_rpi
+writing list of installed files to '/home/claudio/robot_ws/src/kilobot_rpi/build/kilobot_rpi/install.log'

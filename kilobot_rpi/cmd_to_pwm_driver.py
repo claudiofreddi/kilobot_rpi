@@ -26,6 +26,8 @@ class VelocitySubscriber(Node):
 
         self.pwm_Left = 0
         self.pwm_Right = 0
+        
+        self.pin_ON_OFF_POWER = 19
 
         seconds = 0 #time.time()
 
@@ -37,6 +39,12 @@ class VelocitySubscriber(Node):
         GPIO.setup(self.Motor_Left_Pin2, GPIO.OUT)
         GPIO.setup(self.Motor_Right_Pin1, GPIO.OUT)
         GPIO.setup(self.Motor_Right_Pin2, GPIO.OUT)
+        GPIO.setup(self.pin_ON_OFF_POWER, GPIO.OUT)
+
+
+        #Turns Relay On. Brings Voltage to Min GPIO can output ~0V.
+        GPIO.output(self.pin_ON_OFF_POWER , 0)
+        print('Power On')
         try:
             self.pwm_Left = GPIO.PWM(self.Motor_Left_EN, 1000)
             self.pwm_Right = GPIO.PWM(self.Motor_Right_EN, 1000)
@@ -87,13 +95,16 @@ class VelocitySubscriber(Node):
 
     def destroy(self):
         self.motorStop()
+        #This Turns Relay Off. Brings Voltage to Max GPIO can output ~3.3V
+        GPIO.output(self.pin_ON_OFF_POWER , 1)
+        print('Power Off')
         GPIO.cleanup() 
 
     def cmd_to_pwm_callback(self, msg):
 
         right_wheel_vel = (msg.linear.x + msg.angular.z)/2
         left_wheel_vel = (msg.linear.x - msg.angular.z)/2
-        print(right_wheel_vel, " / ",left_wheel_vel )
+        print(right_wheel_vel, " / ",left_wheel_vel, "*" )
         
         if (right_wheel_vel==0):
             self.motor_right(1, self.Dir_forward,0)
@@ -115,18 +126,21 @@ class VelocitySubscriber(Node):
         self.motorStop()
 
 def main(args=None):
+   
     rclpy.init(args=args)
 
     velocity_subscriber = VelocitySubscriber()
 
-    rclpy.spin(velocity_subscriber)
+    try:
+        rclpy.spin(velocity_subscriber)
 
-    # Destroy the node explicitly
-    # (optional - otherwise it will be done automatically
-    # when the garbage collector destroys the node object)
-    velocity_subscriber.destroy_node()
-    rclpy.shutdown()
+    except KeyboardInterrupt:
+        print('shutdown...')
+
     velocity_subscriber.destroy()
+    velocity_subscriber.destroy_node()
+    #rclpy.shutdown() # Called by .destroy_node()
+
 
 
 if __name__ == '__main__':

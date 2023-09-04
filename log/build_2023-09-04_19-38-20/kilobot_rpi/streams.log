@@ -1,0 +1,38 @@
+[3.364s] Invoking command in '/home/claudio/robot_ws/src/kilobot_rpi': PYTHONPATH=/home/claudio/robot_ws/src/kilobot_rpi/build/kilobot_rpi/prefix_override:/home/claudio/robot_ws/src/kilobot_rpi/install/kilobot_rpi/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base build/kilobot_rpi build --build-base /home/claudio/robot_ws/src/kilobot_rpi/build/kilobot_rpi/build install --record /home/claudio/robot_ws/src/kilobot_rpi/build/kilobot_rpi/install.log --single-version-externally-managed
+[4.617s] running egg_info
+[4.619s] writing build/kilobot_rpi/kilobot_rpi.egg-info/PKG-INFO
+[4.621s] writing dependency_links to build/kilobot_rpi/kilobot_rpi.egg-info/dependency_links.txt
+[4.622s] writing entry points to build/kilobot_rpi/kilobot_rpi.egg-info/entry_points.txt
+[4.623s] writing requirements to build/kilobot_rpi/kilobot_rpi.egg-info/requires.txt
+[4.624s] writing top-level names to build/kilobot_rpi/kilobot_rpi.egg-info/top_level.txt
+[4.632s] reading manifest file 'build/kilobot_rpi/kilobot_rpi.egg-info/SOURCES.txt'
+[4.635s] adding license file 'LICENSE'
+[4.638s] writing manifest file 'build/kilobot_rpi/kilobot_rpi.egg-info/SOURCES.txt'
+[4.638s] running build
+[4.639s] running build_py
+[4.640s] copying kilobot_rpi/Speech_And_Recongnition.py -> /home/claudio/robot_ws/src/kilobot_rpi/build/kilobot_rpi/build/lib/kilobot_rpi
+[4.641s] copying kilobot_rpi/cmd_to_pwm_driver.py -> /home/claudio/robot_ws/src/kilobot_rpi/build/kilobot_rpi/build/lib/kilobot_rpi
+[4.642s] copying kilobot_rpi/SpeechSample.py -> /home/claudio/robot_ws/src/kilobot_rpi/build/kilobot_rpi/build/lib/kilobot_rpi
+[4.643s] copying kilobot_rpi/test_rele.py -> /home/claudio/robot_ws/src/kilobot_rpi/build/kilobot_rpi/build/lib/kilobot_rpi
+[4.644s] copying kilobot_rpi/testspeech.py -> /home/claudio/robot_ws/src/kilobot_rpi/build/kilobot_rpi/build/lib/kilobot_rpi
+[4.645s] running install
+[4.646s] running install_lib
+[4.650s] copying /home/claudio/robot_ws/src/kilobot_rpi/build/kilobot_rpi/build/lib/kilobot_rpi/Speech_And_Recongnition.py -> /home/claudio/robot_ws/src/kilobot_rpi/install/kilobot_rpi/lib/python3.10/site-packages/kilobot_rpi
+[4.651s] copying /home/claudio/robot_ws/src/kilobot_rpi/build/kilobot_rpi/build/lib/kilobot_rpi/cmd_to_pwm_driver.py -> /home/claudio/robot_ws/src/kilobot_rpi/install/kilobot_rpi/lib/python3.10/site-packages/kilobot_rpi
+[4.652s] copying /home/claudio/robot_ws/src/kilobot_rpi/build/kilobot_rpi/build/lib/kilobot_rpi/SpeechSample.py -> /home/claudio/robot_ws/src/kilobot_rpi/install/kilobot_rpi/lib/python3.10/site-packages/kilobot_rpi
+[4.653s] copying /home/claudio/robot_ws/src/kilobot_rpi/build/kilobot_rpi/build/lib/kilobot_rpi/test_rele.py -> /home/claudio/robot_ws/src/kilobot_rpi/install/kilobot_rpi/lib/python3.10/site-packages/kilobot_rpi
+[4.654s] copying /home/claudio/robot_ws/src/kilobot_rpi/build/kilobot_rpi/build/lib/kilobot_rpi/testspeech.py -> /home/claudio/robot_ws/src/kilobot_rpi/install/kilobot_rpi/lib/python3.10/site-packages/kilobot_rpi
+[4.656s] byte-compiling /home/claudio/robot_ws/src/kilobot_rpi/install/kilobot_rpi/lib/python3.10/site-packages/kilobot_rpi/Speech_And_Recongnition.py to Speech_And_Recongnition.cpython-310.pyc
+[4.659s] byte-compiling /home/claudio/robot_ws/src/kilobot_rpi/install/kilobot_rpi/lib/python3.10/site-packages/kilobot_rpi/cmd_to_pwm_driver.py to cmd_to_pwm_driver.cpython-310.pyc
+[4.664s] byte-compiling /home/claudio/robot_ws/src/kilobot_rpi/install/kilobot_rpi/lib/python3.10/site-packages/kilobot_rpi/SpeechSample.py to SpeechSample.cpython-310.pyc
+[4.666s] byte-compiling /home/claudio/robot_ws/src/kilobot_rpi/install/kilobot_rpi/lib/python3.10/site-packages/kilobot_rpi/test_rele.py to test_rele.cpython-310.pyc
+[4.668s] byte-compiling /home/claudio/robot_ws/src/kilobot_rpi/install/kilobot_rpi/lib/python3.10/site-packages/kilobot_rpi/testspeech.py to testspeech.cpython-310.pyc
+[4.669s] running install_data
+[4.672s] running install_egg_info
+[4.679s] removing '/home/claudio/robot_ws/src/kilobot_rpi/install/kilobot_rpi/lib/python3.10/site-packages/kilobot_rpi-0.0.0-py3.10.egg-info' (and everything under it)
+[4.680s] Copying build/kilobot_rpi/kilobot_rpi.egg-info to /home/claudio/robot_ws/src/kilobot_rpi/install/kilobot_rpi/lib/python3.10/site-packages/kilobot_rpi-0.0.0-py3.10.egg-info
+[4.688s] running install_scripts
+[4.768s] Installing cmd_to_pwm_driver script to /home/claudio/robot_ws/src/kilobot_rpi/install/kilobot_rpi/lib/kilobot_rpi
+[4.770s] Installing my_node script to /home/claudio/robot_ws/src/kilobot_rpi/install/kilobot_rpi/lib/kilobot_rpi
+[4.778s] writing list of installed files to '/home/claudio/robot_ws/src/kilobot_rpi/build/kilobot_rpi/install.log'
+[4.946s] Invoked command in '/home/claudio/robot_ws/src/kilobot_rpi' returned '0': PYTHONPATH=/home/claudio/robot_ws/src/kilobot_rpi/build/kilobot_rpi/prefix_override:/home/claudio/robot_ws/src/kilobot_rpi/install/kilobot_rpi/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base build/kilobot_rpi build --build-base /home/claudio/robot_ws/src/kilobot_rpi/build/kilobot_rpi/build install --record /home/claudio/robot_ws/src/kilobot_rpi/build/kilobot_rpi/install.log --single-version-externally-managed

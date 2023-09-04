@@ -1,0 +1,80 @@
+[0.000000] (-) TimerEvent: {}
+[0.002482] (kilobot_rpi) JobQueued: {'identifier': 'kilobot_rpi', 'dependencies': OrderedDict()}
+[0.003184] (kilobot_rpi) JobStarted: {'identifier': 'kilobot_rpi'}
+[0.099122] (-) TimerEvent: {}
+[0.199850] (-) TimerEvent: {}
+[0.300699] (-) TimerEvent: {}
+[0.401558] (-) TimerEvent: {}
+[0.502344] (-) TimerEvent: {}
+[0.603156] (-) TimerEvent: {}
+[0.703927] (-) TimerEvent: {}
+[0.804691] (-) TimerEvent: {}
+[0.905377] (-) TimerEvent: {}
+[1.006149] (-) TimerEvent: {}
+[1.107012] (-) TimerEvent: {}
+[1.207732] (-) TimerEvent: {}
+[1.308473] (-) TimerEvent: {}
+[1.409218] (-) TimerEvent: {}
+[1.510223] (-) TimerEvent: {}
+[1.611883] (-) TimerEvent: {}
+[1.712573] (-) TimerEvent: {}
+[1.813419] (-) TimerEvent: {}
+[1.914271] (-) TimerEvent: {}
+[2.015045] (-) TimerEvent: {}
+[2.115822] (-) TimerEvent: {}
+[2.216557] (-) TimerEvent: {}
+[2.317284] (-) TimerEvent: {}
+[2.417974] (-) TimerEvent: {}
+[2.518911] (-) TimerEvent: {}
+[2.619697] (-) TimerEvent: {}
+[2.720544] (-) TimerEvent: {}
+[2.821288] (-) TimerEvent: {}
+[2.922033] (-) TimerEvent: {}
+[3.022857] (-) TimerEvent: {}
+[3.123619] (-) TimerEvent: {}
+[3.224606] (-) TimerEvent: {}
+[3.322696] (kilobot_rpi) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', 'build/kilobot_rpi', 'build', '--build-base', '/home/claudio/robot_ws/src/kilobot_rpi/build/kilobot_rpi/build', 'install', '--record', '/home/claudio/robot_ws/src/kilobot_rpi/build/kilobot_rpi/install.log', '--single-version-externally-managed'], 'cwd': '/home/claudio/robot_ws/src/kilobot_rpi', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'claudio', 'SSH_CLIENT': '192.168.8.200 40656 22', 'LC_TIME': 'it_IT.UTF-8', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/claudio/.vscode-server/bin/6c3e3dba23e8fadc360aed75ce363ba185c49794/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'BROWSER': '/home/claudio/.vscode-server/bin/6c3e3dba23e8fadc360aed75ce363ba185c49794/bin/helpers/browser.sh', 'MOTD_SHOWN': 'pam', 'HOME': '/home/claudio', 'TERM_PROGRAM_VERSION': '1.81.1', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-7a615099-9080-445a-8456-721e38e7e959.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/claudio/.vscode-server/bin/6c3e3dba23e8fadc360aed75ce363ba185c49794/extensions/git/dist/askpass-main.js', 'LC_MONETARY': 'it_IT.UTF-8', 'VSCODE_GIT_ASKPASS_NODE': '/home/claudio/.vscode-server/bin/6c3e3dba23e8fadc360aed75ce363ba185c49794/node', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'COLCON_PREFIX_PATH': '/home/claudio/robot_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'claudio', '_': '/home/claudio/.local/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '3', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/claudio/.vscode-server/bin/6c3e3dba23e8fadc360aed75ce363ba185c49794/bin/remote-cli:/home/claudio/.local/bin:/opt/ros/humble/bin:/home/claudio/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ADDRESS': 'it_IT.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'it_IT.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-ba220ad465.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/claudio/robot_ws/install/kilobot_rpi:/home/claudio/robot_ws/install/kilobot:/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'it_IT.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'it_IT.UTF-8', 'LC_IDENTIFICATION': 'it_IT.UTF-8', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/claudio/robot_ws/src/kilobot_rpi/build/kilobot_rpi', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.8.200 40656 192.168.8.201 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/claudio/robot_ws/src/kilobot_rpi/build/kilobot_rpi/prefix_override:/home/claudio/robot_ws/src/kilobot_rpi/install/kilobot_rpi/lib/python3.10/site-packages:/home/claudio/robot_ws/install/kilobot_rpi/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'it_IT.UTF-8', 'LC_PAPER': 'it_IT.UTF-8', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/claudio/robot_ws/install/kilobot'}, 'shell': False}
+[3.333822] (-) TimerEvent: {}
+[3.438068] (-) TimerEvent: {}
+[3.538925] (-) TimerEvent: {}
+[3.639613] (-) TimerEvent: {}
+[3.740464] (-) TimerEvent: {}
+[3.841620] (-) TimerEvent: {}
+[3.942316] (-) TimerEvent: {}
+[4.043063] (-) TimerEvent: {}
+[4.143795] (-) TimerEvent: {}
+[4.244517] (-) TimerEvent: {}
+[4.345265] (-) TimerEvent: {}
+[4.446018] (-) TimerEvent: {}
+[4.546833] (-) TimerEvent: {}
+[4.602235] (kilobot_rpi) StdoutLine: {'line': b'running egg_info\n'}
+[4.604793] (kilobot_rpi) StdoutLine: {'line': b'writing build/kilobot_rpi/kilobot_rpi.egg-info/PKG-INFO\n'}
+[4.606883] (kilobot_rpi) StdoutLine: {'line': b'writing dependency_links to build/kilobot_rpi/kilobot_rpi.egg-info/dependency_links.txt\n'}
+[4.607904] (kilobot_rpi) StdoutLine: {'line': b'writing entry points to build/kilobot_rpi/kilobot_rpi.egg-info/entry_points.txt\n'}
+[4.608688] (kilobot_rpi) StdoutLine: {'line': b'writing requirements to build/kilobot_rpi/kilobot_rpi.egg-info/requires.txt\n'}
+[4.609356] (kilobot_rpi) StdoutLine: {'line': b'writing top-level names to build/kilobot_rpi/kilobot_rpi.egg-info/top_level.txt\n'}
+[4.617676] (kilobot_rpi) StdoutLine: {'line': b"reading manifest file 'build/kilobot_rpi/kilobot_rpi.egg-info/SOURCES.txt'\n"}
+[4.619192] (kilobot_rpi) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[4.622091] (kilobot_rpi) StdoutLine: {'line': b"writing manifest file 'build/kilobot_rpi/kilobot_rpi.egg-info/SOURCES.txt'\n"}
+[4.622798] (kilobot_rpi) StdoutLine: {'line': b'running build\n'}
+[4.623344] (kilobot_rpi) StdoutLine: {'line': b'running build_py\n'}
+[4.624389] (kilobot_rpi) StdoutLine: {'line': b'copying kilobot_rpi/cmd_to_pwm_driver.py -> /home/claudio/robot_ws/src/kilobot_rpi/build/kilobot_rpi/build/lib/kilobot_rpi\n'}
+[4.627154] (kilobot_rpi) StdoutLine: {'line': b'running install\n'}
+[4.628399] (kilobot_rpi) StdoutLine: {'line': b'running install_lib\n'}
+[4.632246] (kilobot_rpi) StdoutLine: {'line': b'copying /home/claudio/robot_ws/src/kilobot_rpi/build/kilobot_rpi/build/lib/kilobot_rpi/cmd_to_pwm_driver.py -> /home/claudio/robot_ws/src/kilobot_rpi/install/kilobot_rpi/lib/python3.10/site-packages/kilobot_rpi\n'}
+[4.636409] (kilobot_rpi) StdoutLine: {'line': b'byte-compiling /home/claudio/robot_ws/src/kilobot_rpi/install/kilobot_rpi/lib/python3.10/site-packages/kilobot_rpi/cmd_to_pwm_driver.py to cmd_to_pwm_driver.cpython-310.pyc\n'}
+[4.642018] (kilobot_rpi) StdoutLine: {'line': b'running install_data\n'}
+[4.644734] (kilobot_rpi) StdoutLine: {'line': b'running install_egg_info\n'}
+[4.646971] (-) TimerEvent: {}
+[4.652289] (kilobot_rpi) StdoutLine: {'line': b"removing '/home/claudio/robot_ws/src/kilobot_rpi/install/kilobot_rpi/lib/python3.10/site-packages/kilobot_rpi-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[4.654493] (kilobot_rpi) StdoutLine: {'line': b'Copying build/kilobot_rpi/kilobot_rpi.egg-info to /home/claudio/robot_ws/src/kilobot_rpi/install/kilobot_rpi/lib/python3.10/site-packages/kilobot_rpi-0.0.0-py3.10.egg-info\n'}
+[4.660767] (kilobot_rpi) StdoutLine: {'line': b'running install_scripts\n'}
+[4.737769] (kilobot_rpi) StdoutLine: {'line': b'Installing cmd_to_pwm_driver script to /home/claudio/robot_ws/src/kilobot_rpi/install/kilobot_rpi/lib/kilobot_rpi\n'}
+[4.740772] (kilobot_rpi) StdoutLine: {'line': b'Installing my_node script to /home/claudio/robot_ws/src/kilobot_rpi/install/kilobot_rpi/lib/kilobot_rpi\n'}
+[4.741821] (kilobot_rpi) StdoutLine: {'line': b"writing list of installed files to '/home/claudio/robot_ws/src/kilobot_rpi/build/kilobot_rpi/install.log'\n"}
+[4.747271] (-) TimerEvent: {}
+[4.848550] (-) TimerEvent: {}
+[4.888985] (kilobot_rpi) CommandEnded: {'returncode': 0}
+[4.953842] (-) TimerEvent: {}
+[5.022377] (kilobot_rpi) JobEnded: {'identifier': 'kilobot_rpi', 'rc': 0}
+[5.025439] (-) EventReactorShutdown: {}

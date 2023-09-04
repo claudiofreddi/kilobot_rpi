@@ -2,30 +2,55 @@
 # pip install pyttsx3
 # https://www.codespeedy.com/how-to-install-pyttsx3-in-python-and-convert-text-into-speech-offline/#google_vignette
 
-
 import pyttsx3
-  
-# initialisation
-engine = pyttsx3.init()
-  
 
+engine = pyttsx3.init()
 
 class KilobotSpeechClass():
     def __init__(self):
-        engine.init()
+        # initialisationclear
         self.EnableSpeech = True
 
     # Commands
     def say_hello(self):
         # testing
-        engine.say("My first code on text-to-speech")
-        engine.say("Thank you, Geeksforgeeks")
+        engine.say("Ciao Lorenzo, Sono Claudio")
+        #engine.say("Thank you, Geeksforgeeks")
+        engine.runAndWait()
+
+
+    def say_test(self):
+        # RATE"""
+        rate = engine.getProperty('rate')   # getting details of current speaking rate
+        print (rate)                        #printing current voice rate
+        engine.setProperty('rate', 125)     # setting up new voice rate
+
+
+        # VOLUME"""
+        volume = engine.getProperty('volume')   #getting to know current volume level (min=0 and max=1)
+        print (volume)                          #printing current volume level
+        engine.setProperty('volume',1.0)    # setting up volume level  between 0 and 1
+
+        # VOICE"""
+        voices = engine.getProperty('voices')       #getting details of current voice
+        engine.setProperty('voice', voices[0].id)  #changing index, changes voices. o for male
+        #engine.setProperty('voice', voices[1].id)   #changing index, changes voices. 1 for female
+
+        engine.say("Hello World!")
+        engine.say('My current speaking rate is ' + str(rate))
+        engine.runAndWait()
+        engine.stop()
+
+        # Saving Voice to a file"""
+        # On linux make sure that 'espeak' and 'ffmpeg' are installed
+        engine.save_to_file('Hello World', 'test.mp3')
         engine.runAndWait()
 
 def main():
     MySpeechClass = KilobotSpeechClass()
     print("speech enabled")
-    MySpeechClass.say_hello()
+    #MySpeechClass.say_hello()
+    MySpeechClass.say_test()
 
 
 # Main

@@ -14,7 +14,7 @@ class KilobotSpeechClass():
     # Commands
     def say_hello(self):
         # testing
-        engine.say("Ciao Lorenzo, Sono Claudio")
+        engine.say("Ciao, Testo")
         #engine.say("Thank you, Geeksforgeeks")
         engine.runAndWait()
 

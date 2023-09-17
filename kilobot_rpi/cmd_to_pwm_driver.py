@@ -14,6 +14,8 @@ class VelocitySubscriber(Node):
         self.subscription = self.create_subscription(Twist,'turtle1/cmd_vel',self.cmd_to_pwm_callback,10)
         self.subscription  # prevent unused variable warning
 
+        self.ver = "v3"
+        self.laststatus = 0
         self.Motor_Left_EN    = 25
         self.Motor_Right_EN    = 4 
         self.Motor_Left_Pin1  = 23 
@@ -27,6 +29,9 @@ class VelocitySubscriber(Node):
         self.pwm_Left = 0
         self.pwm_Right = 0
         
+        self.LeftSpeed = 50
+        self.RightSpeed = 90
+                
         self.pin_ON_OFF_POWER = 19
 
         seconds = 0 #time.time()
@@ -45,6 +50,7 @@ class VelocitySubscriber(Node):
         #Turns Relay On. Brings Voltage to Min GPIO can output ~0V.
         GPIO.output(self.pin_ON_OFF_POWER , 0)
         print('Power On')
+        print('Version ' + self.ver)
         try:
             self.pwm_Left = GPIO.PWM(self.Motor_Left_EN, 1000)
             self.pwm_Right = GPIO.PWM(self.Motor_Right_EN, 1000)
@@ -104,25 +110,24 @@ class VelocitySubscriber(Node):
 
         right_wheel_vel = (msg.linear.x + msg.angular.z)/2
         left_wheel_vel = (msg.linear.x - msg.angular.z)/2
-        print(right_wheel_vel, " / ",left_wheel_vel, "*" )
+        print(right_wheel_vel, " / ",left_wheel_vel, self.ver)
         
         if (right_wheel_vel==0):
             self.motor_right(1, self.Dir_forward,0)
-
-        if (right_wheel_vel>0):
-            self.motor_right(1, self.Dir_forward,50)
-        if (right_wheel_vel<0):
-            self.motor_right(1, self.Dir_backward,50)
-
         if (left_wheel_vel==0):
             self.motor_left(1, self.Dir_forward,0)
 
+        if (right_wheel_vel>0):
+            self.motor_right(1, self.Dir_forward,self.RightSpeed )
         if (left_wheel_vel>0):
-            self.motor_left(1, self.Dir_forward,50)
+            self.motor_left(1, self.Dir_forward,self.LeftSpeed )
+
+        if (right_wheel_vel<0):
+            self.motor_right(1, self.Dir_backward,self.RightSpeed)
         if (left_wheel_vel<0):
-            self.motor_left(1, self.Dir_backward,50)
+            self.motor_left(1, self.Dir_backward,self.LeftSpeed )
         
-        time.sleep(0.1)
+        time.sleep(0.2)
         self.motorStop()
 
 def main(args=None):

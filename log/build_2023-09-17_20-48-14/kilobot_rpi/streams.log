@@ -1,0 +1,23 @@
+[3.305s] Invoking command in '/home/claudio/robot_ws/src/kilobot_rpi': PYTHONPATH=/home/claudio/robot_ws/src/kilobot_rpi/build/kilobot_rpi/prefix_override:/home/claudio/robot_ws/src/kilobot_rpi/install/kilobot_rpi/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base build/kilobot_rpi build --build-base /home/claudio/robot_ws/src/kilobot_rpi/build/kilobot_rpi/build install --record /home/claudio/robot_ws/src/kilobot_rpi/build/kilobot_rpi/install.log --single-version-externally-managed
+[4.546s] running egg_info
+[4.548s] writing build/kilobot_rpi/kilobot_rpi.egg-info/PKG-INFO
+[4.550s] writing dependency_links to build/kilobot_rpi/kilobot_rpi.egg-info/dependency_links.txt
+[4.551s] writing entry points to build/kilobot_rpi/kilobot_rpi.egg-info/entry_points.txt
+[4.552s] writing requirements to build/kilobot_rpi/kilobot_rpi.egg-info/requires.txt
+[4.553s] writing top-level names to build/kilobot_rpi/kilobot_rpi.egg-info/top_level.txt
+[4.562s] reading manifest file 'build/kilobot_rpi/kilobot_rpi.egg-info/SOURCES.txt'
+[4.563s] adding license file 'LICENSE'
+[4.566s] writing manifest file 'build/kilobot_rpi/kilobot_rpi.egg-info/SOURCES.txt'
+[4.566s] running build
+[4.567s] running build_py
+[4.570s] running install
+[4.571s] running install_lib
+[4.580s] running install_data
+[4.582s] running install_egg_info
+[4.589s] removing '/home/claudio/robot_ws/src/kilobot_rpi/install/kilobot_rpi/lib/python3.10/site-packages/kilobot_rpi-0.0.0-py3.10.egg-info' (and everything under it)
+[4.591s] Copying build/kilobot_rpi/kilobot_rpi.egg-info to /home/claudio/robot_ws/src/kilobot_rpi/install/kilobot_rpi/lib/python3.10/site-packages/kilobot_rpi-0.0.0-py3.10.egg-info
+[4.597s] running install_scripts
+[4.674s] Installing cmd_to_pwm_driver script to /home/claudio/robot_ws/src/kilobot_rpi/install/kilobot_rpi/lib/kilobot_rpi
+[4.675s] Installing my_node script to /home/claudio/robot_ws/src/kilobot_rpi/install/kilobot_rpi/lib/kilobot_rpi
+[4.677s] writing list of installed files to '/home/claudio/robot_ws/src/kilobot_rpi/build/kilobot_rpi/install.log'
+[4.820s] Invoked command in '/home/claudio/robot_ws/src/kilobot_rpi' returned '0': PYTHONPATH=/home/claudio/robot_ws/src/kilobot_rpi/build/kilobot_rpi/prefix_override:/home/claudio/robot_ws/src/kilobot_rpi/install/kilobot_rpi/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base build/kilobot_rpi build --build-base /home/claudio/robot_ws/src/kilobot_rpi/build/kilobot_rpi/build install --record /home/claudio/robot_ws/src/kilobot_rpi/build/kilobot_rpi/install.log --single-version-externally-managed

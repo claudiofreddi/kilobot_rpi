@@ -57,6 +57,6 @@ while True:
     if "yes" in command:
         # Shutting down
         Speak("Spengo")
-        os.system("shutdown -h now")
+        #os.system("shutdown -h now")
         break
     Speak("Puoi ripetere? grazie") 
